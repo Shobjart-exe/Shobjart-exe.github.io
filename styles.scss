@@ -1,0 +1,160 @@
+/* ==========================================
+   VARIABILI DI COLORI (BULMA DEFAULT)
+========================================== */
+
+/* Colori Base */
+$black:        #0a0a0a;
+$black-bis:    #121212;
+$black-ter:    #242424;
+$grey-darker:  #363636;
+$grey-dark:    #4a4a4a;
+$grey:         #7a7a7a;
+$grey-light:   #b5b5b5;
+$grey-lighter: #ededed;
+$white-ter:    #f5f5f5;
+$white-bis:    #fafafa;
+$white:        #ffffff;
+
+/* Colori Primari di Bulma */
+$primary:  #00d1b2;
+$link:     #3273dc;
+$info:     #209cee;
+$success:  #23d160;
+$warning:  #ffdd57;
+$danger:   #ff3860;
+
+/* ==========================================
+   VARIABILI DI FORME E SPAZIATURE
+========================================== */
+
+/* Border Radius */
+$radius-small: 2px;
+$radius-medium: 4px;
+$radius-large: 8px;
+
+/* Spaziature */
+$space-xs: 4px;
+$space-s: 8px;
+$space-m: 16px;
+$space-l: 24px;
+$space-xl: 32px;
+
+/* ==========================================
+   VARIABILI DI FONT E TIPOGRAFIA
+========================================== */
+
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-heading: 'Georgia', serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+/* ==========================================
+   GLOBAL STYLES
+========================================== */
+
+html {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
+  margin-bottom: $space-m;
+}
+
+/* Paragrafi */
+p {
+  margin-bottom: $space-m;
+}
+
+/* ==========================================
+   OVERRIDES E STILI PERSONALIZZATI
+========================================== */
+
+/* Pulsanti */
+.button {
+  background-color: $primary !important;
+  color: $white !important;
+  border: none !important;
+  border-radius: $radius-medium;
+  padding: $space-s $space-m;
+}
+
+.button:hover {
+  background-color: lighten($primary, 10%) !important;
+}
+
+/* Elementi dei form */
+.input,
+.textarea,
+.select select {
+  background-color: $white !important;
+  color: $black !important;
+  border: 1px solid $grey-light !important;
+  border-radius: $radius-small;
+}
+
+/* Link */
+a {
+  color: $link !important;
+}
+
+a:hover {
+  color: lighten($link, 10%) !important;
+}
+
+/* ==========================================
+   OVERRIDES E STILI PERSONALIZZATI (Versione Personalizzata)
+========================================== */
+
+/* Sezione principale personalizzata */
+.custom-section {
+  background-color: $white-ter !important;
+  color: $black !important;
+  padding: $space-m;
+}
+
+/* Header personalizzato (sostituisce il "hero") */
+.custom-header {
+  background-color: $primary !important;
+  color: $white !important;
+  padding: $space-l;
+}
+
+/* Footer personalizzato */
+.custom-footer {
+  background-color: $grey-light !important;
+  color: $black !important;
+  padding: $space-m;
+}
+
+/* Contenitori personalizzati (sostituisce box, card, modal-content) */
+.custom-container {
+  background-color: $white-ter !important;
+  color: $black !important;
+  padding: $space-m;
+  border: 1px solid $grey-lighter !important;
+  border-radius: $radius-small;
+}
+
+/* Esempio di personalizzazione per pulsanti (rimane invariato) */
+.button {
+  background-color: $primary !important;
+  color: $white !important;
+  border: none !important;
+  border-radius: $radius-medium;
+  padding: $space-s $space-m;
+}
+
+.button:hover {
+  background-color: lighten($primary, 10%) !important;
+}
